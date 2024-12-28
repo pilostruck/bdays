@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday sayanggg❤️❤️❤️</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: #ffecd2;
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #ff6f61;
+            color: #fff;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .photo-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+        .photo-container img {
+            width: 100%;
+            height: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+        audio {
+            display: block;
+            margin: 20px auto;
+            width: 80%;
+        }
+        /* Button for blowing candles */
+        .blow-candle-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .blow-candle-btn:hover {
+            background-color: #d0453a;
+        }
+        /* Modal for blowing candles effect */
+        .blow-candle-message {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #ff6f61;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>Kumpulan Foto Ter-Cute dan Cantiq</header>
+    <div class="photo-container">
+        <img src="img/6.jpg" alt="Photo 3">
+        <img src="img/7.jpg" alt="Photo 3">
+        <img src="img/3.jpg" alt="Photo 3">
+        <img src="img/4.jpg" alt="Photo 3">
+        <img src="img/10.jpg" alt="Photo 3">
+        <img src="img/11.jpg" alt="Photo 3">
+        <img src="img/12.jpg" alt="Photo 3">
+        <img src="img/13.jpg" alt="Photo 3">
+        <img src="img/14.jpg" alt="Photo 3">
+        <img src="img/15.jpg" alt="Photo 3">
+        <img src="img/16.jpg" alt="Photo 3">
+        <img src="img/1.jpg" alt="Photo 1">
+        <img src="img/2.jpg" alt="Photo 2">
+        <img src="img/5.jpg" alt="Photo 3">
+        <img src="img/8.jpg" alt="Photo 3">
+        <img src="img/9.jpg" alt="Photo 3">
+    </div>
+    <audio controls autoplay>
+        <source src="serta_mulia.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Blow Candles Button -->
+    <button class="blow-candle-btn" onclick="blowCandles()">Tiup Lilin</button>
+
+    <!-- Blow Candles Message -->
+    <div class="blow-candle-message" id="blowMessage">
+        <p>🎉 Selamat Ulang Tahun sayanggg❤️❤️❤️❤️!🎂 
+            Lilinnya udah mati, tapi rasa cintaku padamu tidak pernah mati🎉🎉🎉</p>
+    </div>
+
+    <footer>Happy 16th b'days sayanggg🫶🫶❤️🎉🎉</footer>
+
+    <script>
+        // Function to simulate blowing out candles
+        function blowCandles() {
+            const message = document.getElementById('blowMessage');
+            message.style.display = 'block';
+            setTimeout(() => {
+                message.style.display = 'none';
+            }, 3000); // Hide message after 3 seconds
+        }
+    </script>
+</body>
+</html>
